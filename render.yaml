@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: telegram-video-downloader
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
